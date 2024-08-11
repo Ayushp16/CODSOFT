@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-bg-color: #E2DAD6;
+  --secondary-bg-color: rgba(13, 40, 166, 1);
+  --card-border-color: rgba(208, 208, 208, 1);
+  --button-primary-color:#7FA1C3;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+nav.navbar {
+  font-weight: bold;
+  background-color: var(--main-bg-color);
+}
+
+.nav-item {
+  text-decoration: none;
+  margin-right: 32px;
+}
+
+.nav-item .nav-link {
+  font-weight: 400;
+  color: black;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.btn-success {
+ background-color: #4158A6;
+ border-radius: 50px;
+}
+.btn-success:hover {
+  background-color: #1F316F;
+ }
+
+ 
+.main-section {
+  position: relative;
+  background-image: url("https://i.pinimg.com/originals/87/16/26/8716267fe672c1a6a483b6c73f24275b.jpg");;
+}
+
+.our-section {
+  background-color: #F5EDED;
+  height: 780px;
+}
+
+
+#img-car {
+  z-index: 1;
+  height: 700px;
+}
+
+.content-our-section {
+  margin-left: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.fw-bold{
+  margin-top: 20px;
+}
+
+.item-list:before {
+  content: "";
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaKTCERY75vBXcd1Hc4-fDXXoePpfkWPEjqQ&s");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:300px;
+  height: 100%;
+  width: 100%;
+  margin-top: -20px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.card-desc {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.icon-card {
+  width: 32px;
+  height: 32px;
+  margin: 10px 0 0 0;
+}
+
+.text-testimonial {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.text-testimonial .tagline-testimonial {
+  margin-top: 6px;
+  padding: 0 250px 0 250px;
+}
+
+.card-user-content {
+  margin-left: 20px;
+}
+
+.rate-star {
+  width: 16px;
+  height: 16px;
+}
+
+#card-testimonial {
+  display: flex;
+  align-items: center;
+  background-color: #F5EDED;
+  border: 0;
+  border-radius: 10px;
+}
+
+.prev-button,
+.next-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.671);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: var(--button-primary-color);
+  border: 1px solid var(--button-primary-color);
+  color: white;
+}
+
+#img-profile {
+  width: 170px;
+  height: 170px;
+}
+
+#banner-container {
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+#banner-container h1,
+.content-banner {
+  color: white;
+}
+
+.item-navigation {
+  font-weight: bold;
+}
+
+
+.icon-socmed {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+#faq-section {
+  padding-bottom: 60px;
+  margin-top: 80px;
+}
+
+#icon-facebook,
+#icon-instagram,
+#icon-email{
+  color:blueviolet;
+  font-size: 32px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    margin-top: 20px;
+  }
+
+
+  #img-woman {
+    width: 100%;
+  }
+
+  .Curriculums-tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-our-section {
+    margin-left: 0;
+  }
+
+  .card-user {
+    background-color: var(--main-bg-color);
+    width: 300px;
+    height: 700px;
+    border-radius: 10px;
+  }
+
+  .card-user .card-item-user {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #faq-section {
+    padding: 30px 0 30px 0;
+  }
+}
+
+.footer-section{
+  background-color: #FCF8F3;
+  padding-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .car-img {
+    width: 100%;
+  }
+
+  .card-item {
+    min-height: 350px;
+  }
+}
